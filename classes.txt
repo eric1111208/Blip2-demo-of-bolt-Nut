@@ -1,0 +1,10 @@
+person
+pencil_box
+blue_pen
+red_pen
+laptop
+eraser
+black_pen
+blue_marker_pen
+mouse
+table
