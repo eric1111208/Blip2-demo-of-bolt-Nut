@@ -1,19 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>BLIP-2 + YOLO Nut-Bolt Demo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BLIP-2 + YOLO Mechanical Vision Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    main {
+      padding: 30px 40px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #fff;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+    }
+    a.button {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 10px 20px;
+      background-color: #2c3e50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  <h1>🔩 BLIP-2 + YOLO Vision Demo</h1>
-  <p>This page shows the results of a mechanical part vision system using BLIP-2 and YOLOv8.</p>
 
-  <ul>
-    <li><a href="https://github.com/eric1111208/Blip2-demo-of-bolt-Nut">GitHub Repository</a></li>
-    <li><a href="images/">View Sample Images</a></li>
-    <li><a href="checkpoint-60/">Download LoRA Checkpoint</a></li>
-  </ul>
+<header>
+  <h1>🔩 BLIP‑2 + YOLO Vision Demo</h1>
+  <p>Mechanical Part Detection | Vision + Language Reasoning</p>
+</header>
 
-  <p><em>Powered by GitHub Pages.</em></p>
+<main>
+
+  <div class="section">
+    <h2>🔍 Project Overview</h2>
+    <p>
+      This project fine-tunes BLIP-2 with LoRA to understand assembly scenes involving bolts, nuts, and washers.
+      Integrated with YOLOv8 for object detection, it can count, classify, and reason about mechanical parts
+      in both live webcam feeds and still images.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>🎥 Demo Video</h2>
+    <p>See how the system identifies missing washers, counts bolts, and detects errors:</p>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🧠 Model Architecture</h2>
+    <ul>
+      <li>YOLOv8: Trained on custom dataset of 6 part classes (bolt, nut, washer...)</li>
+      <li>BLIP-2: Fine-tuned using LoRA (`q_proj`, `v_proj`) on 1024×800 resolution images</li>
+      <li>Dataset: 500 images with bounding boxes, captions, and QA pairs</li>
+      <li>Training: Google Colab A100 TPU, ~300 steps</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🖼️ Sample Output</h2>
+    <div class="gallery">
+      <img src="images/demo1.jpg" alt="Sample 1" />
+      <img src="images/demo2.jpg" alt="Sample 2" />
+      <img src="images/demo3.jpg" alt="Sample 3" />
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📦 Download Resources</h2>
+    <a class="button" href="checkpoint-60/">⬇️ BLIP-2 LoRA Checkpoint</a>
+    <a class="button" href="best.pt">🧠 YOLOv8 Model (.pt)</a>
+    <a class="button" href="data/blip2_training_data.jsonl">📄 Training Data (JSONL)</a>
+  </div>
+
+  <div class="section">
+    <h2>🔗 GitHub & Contact</h2>
+    <p>View the full project and source code on GitHub:</p>
+    <a class="button" href="https://github.com/eric1111208/Blip2-demo-of-bolt-Nut">📂 GitHub Repo</a>
+    <p>For inquiries or collaboration, please contact via GitHub profile.</p>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2025 Eric Kua | Powered by GitHub Pages
+</footer>
+
 </body>
 </html>
+
