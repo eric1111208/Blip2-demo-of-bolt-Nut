@@ -3,14 +3,7 @@
 ###Project 1
 -Description
 -Links
+![Demo](./Screenshot from 2025-07-19-24-27.png)
+![Demo](./Screenshot from 2025-07-19-24-27.png)
 
-###Project 2
--Description
--Links
 
-#Education
--Some University
-
-#Work History
--Workplace 1
--Wrokplace 2
