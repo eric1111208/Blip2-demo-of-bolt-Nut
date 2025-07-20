@@ -6,7 +6,7 @@
 ---
 
 ## 📸 Screenshots
-
+## 🔩 BLIP-2 Bolt & Nut Demo
 ### 🔧 项目运行截图（按时间排序）
 
 ![Screenshot 1](./Screenshot%20from%202025-07-18%2001-23-39.png)
