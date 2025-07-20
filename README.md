@@ -5,7 +5,7 @@
 
 ---
 
-## 📸 Screenshots
+Goto Main Page [index.html](https://eric1111208.github.io/Blip2-demo-of-bolt-Nut/)
 ## 🔩 BLIP-2 Bolt & Nut Demo
 ### 🔧 项目运行截图（按时间排序）
 
@@ -27,4 +27,4 @@
 
 ## 📂 Project Repository
 
-更多内容请参阅 [index.html](https://eric1111208.github.io/Blip2-demo-of-bolt-Nut/)
+Goto Main Page [index.html](https://eric1111208.github.io/Blip2-demo-of-bolt-Nut/)
